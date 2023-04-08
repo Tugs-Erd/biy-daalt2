@@ -1,0 +1,583 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    box-sizing: border-box;
+}
+.container-fluid {
+    width: 100%;
+}
+.home{
+    background-image: url("https://media.gucci.com/content/HeroBigStandard_1600x760/1679478308/HeroBigStandard_Hanni-Horsebit-march23_001_Default.jpg");
+    height: 465px;
+    background-position: center;
+    background-position: bottom;
+    animation: slidY 7s;
+    background-repeat: repeat-x;   
+    opacity: 1; 
+    
+}
+@keyframes slidY{
+    0%{
+        background-image: url("https://media.gucci.com/content/HeroBigStandard_1600x760/1679478308/HeroBigStandard_Hanni-Horsebit-march23_001_Default.jpg");
+    }   
+    25%{
+        background-image: url("https://media.gucci.com/content/HeroBigStandard_3200x1520/1679400919/HeroBigStandard_GG-CUT-Mar23-Pink-new_001_Default.jpg");
+    }
+    50%{
+        background-position: top;
+        background-image: url("https://media.gucci.com/content/HeroBigMedium_768x386/1676039455/HeroBigMedium_Gucci-Spring-Summer-23-004_001_Default.jpg");
+    }
+    75%{
+        opacity: 0.7;
+        background-image: url("https://media.gucci.com/content/HeroBigStandard_3200x1520/1678785399/HeroBigStandard_Gucci-Nojum-Mar-2023-11_001_Default.jpg");
+    }
+}
+.logo img{
+    background-size: 160px 26px;
+    height: 26px;
+    position: relative;
+    top: 26px;
+    left: 595px;
+    width: 160px;
+    z-index: 100;
+}
+.logo{
+    display: flex;
+    margin-top: 0; 
+}
+.header{
+    width: 100%;
+    height: 160px;
+    margin: 0;
+    padding: 0;
+    background: -webkit-linear-gradient(top,#25211e 0,rgba(37,33,30,0) 100%);
+    background: linear-gradient(to bottom,#25211e 0,rgba(37,33,30,0) 100%);
+    position: relative;
+}
+.header:hover{
+    background-color: #1b1b1b;
+    transition: all .2s ease-in-out;
+}
+.header2 ul{
+    font-weight: 800;
+    font-size: 10.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e5dfd9;
+    height: 52px;
+    letter-spacing: 1px;
+    padding: 0 10px;
+    text-transform: uppercase;
+    z-index: 999;
+    margin-top: 37px;
+    margin-right: 31px;
+}
+.header2 ul li{
+    margin-left: 31px;
+    list-style-type: none;
+    cursor: pointer;
+}
+.header2 i{
+    font-size: 13px;
+    color: #e5dfd9;
+}
+.header2 i:nth-last-child(1){
+    position: absolute;
+    top: 95px;
+    left: 306px;
+    display: none;
+}
+.header2 i:nth-last-child(2){
+    position: absolute;
+    top: 95px;
+    left: 413px;
+    display: none;
+}
+.header2 i:nth-last-child(3){
+    position: absolute;
+    top: 95px;
+    left: 506px;
+    display: none;
+}
+.header2 i:nth-last-child(4){
+    position: absolute;
+    top: 95px;
+    left: 574px;
+    display: none;
+}
+.header2 i:nth-last-child(5){
+    position: absolute;
+    top: 95px;
+    left: 650px;
+    display: none;
+}
+.header2 i:nth-last-child(6){
+    position: absolute;
+    top: 95px;
+    left: 780px;
+    display: none;
+}
+.header2 i:nth-last-child(7){
+    position: absolute;
+    top: 95px;
+    left: 903px;
+    display: none;
+}
+.header2 i:nth-last-child(8){
+    position: absolute;
+    top: 95px;
+    left: 1007px;
+    display: none;
+}
+
+.header2 li:nth-last-child(1):hover i:nth-last-child(8){
+    display: block;
+}
+
+.holboo i{
+    color: #e5dfd9;
+    margin-left: 6px;
+    margin-right: 1px;
+}
+.holboo p{
+    margin-left: 3px;
+    color: #e5dfd9;
+}
+.holboo{
+    display: flex;
+    font-size: 11px;
+    position: absolute;
+    top: 26px;
+}
+.holboo span{
+    margin-left: 15px;
+    display: flex;
+    cursor: pointer;
+}
+.holboo span i:hover{
+    color: white;
+}
+.header .icons i{
+    color: #94908d;
+    position: absolute;
+    left: 1218px;
+    top: 23.5px;
+    font-size: small;
+    cursor: pointer;
+}
+.header .icons i:hover{
+    color: #e5dfd9;
+}
+.header .icons2 i{
+    position: absolute;
+    left: 1295px;
+    color: #94908d;
+    top: 16px;
+    border: 2px solid #94908d;
+    padding: 2px 7px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.header .icons2 i:hover{
+    color: #e5dfd9;
+    border: 2px solid #e5dfd9;
+    padding: 2px 7px;
+    border-radius: 50%;
+    display: block;
+}
+.home .header .icons2 i:hover input{
+    opacity: 1;
+    position: relative;
+}
+.home .header .icons2 input{
+    width: 100px;
+    padding: 2px;
+    background-color: white;
+    border: 1px solid #886800;
+    position: absolute;
+    left: 1200px;
+    top: 60px;
+    opacity: 0;
+    border-radius: 10px;
+}
+.home .font{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 100;
+    font-size: 66px;
+    line-height: 70px;
+    color: #ffffff;   
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;  
+}
+
+.header .eng h4{
+    display: none;
+    position: absolute;
+    left: 18px;
+    top: 30px;
+    margin: 0px;
+    padding-right: 80px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    font-size: x-small;
+    background-color: white;
+}
+.header .eng:hover h4{
+    display: block;
+}
+.header .eng:hover h4:hover{
+    background-color: #e0dfdf;
+    cursor: pointer;
+}
+.discover p{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 400;
+    color: #e0dfdf;
+    border: 0px solid #1b1b1b;
+    background-color: #1b1b1b;
+    padding: 12px 19px;
+    width: 130px;
+    position: absolute;
+    top: 300px;
+    left: 610px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.discover p:hover{
+    background-color: #35312e;
+}
+.bg{
+    background-color: #e7e7e7;
+    position: relative;
+    width: 1310px;
+    margin-bottom: 0;
+    margin-top: 23px;
+    margin-left: 23px;
+    margin-right: 23px;
+    height: max-content;
+}
+.swiper img{
+    height: 400px;
+    object-fit: cover;
+    margin-left: 360px;
+    margin-top: 90px;
+    cursor: grab;
+}
+.swiper .swiper-button-next, .swiper  .swiper-button-prev{
+    color: #94908d;
+}
+.bg .bag .swiper .gucci img{
+    height: 50px;
+    margin-left: 370px;
+    margin-bottom: 300px;
+    margin-top: 0%;
+    cursor: default;
+}
+.bg .bag .swiper p{
+    color: #e7e7e7;
+    border: 1px solid #1b1b1b;
+    background-color: #1b1b1b;
+    width: max-content;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    letter-spacing: .1rem;
+    padding-top: 10px;
+    padding-right: 40px;
+    font-weight: 400;
+    position: absolute;
+    left: 560px;
+    bottom: 200px;
+    cursor: not-allowed;
+}
+.image .img img{
+    margin-left: 460px;
+    margin-top: 27px;
+}
+.image img{
+    object-fit: cover;
+    background-size: cover;
+    max-width: 100%;
+}
+.bg .image p{
+    color: #e7e7e7;
+    border: 1px solid #1b1b1b;
+    background-color: #1b1b1b;
+    width: max-content;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    letter-spacing: .1rem;
+    padding-top: 10px;
+    padding-right: 40px;
+    font-weight: 400;
+    cursor: not-allowed;
+    margin-left: 560px;
+    margin-top: 30px;
+}
+.bg .zai{
+    border: 0px solid #e7e7e7;
+    width: max-content;
+    height: 70px;
+}
+.bg2{
+    background-color: #e7e7e7;
+    position: relative;
+    width: 1310px;
+    margin: 23px;
+    margin-top: 1px;
+}
+.bg2 .imagee img{
+    margin-left: 370px;
+    margin-top: 100px;
+    width: 600px;
+} 
+.bg2 .imagee .gutal img{
+    margin-top: 0px;
+
+}
+.bg2 .imagee p{
+    color: #e7e7e7;
+    border: 1px solid #1b1b1b;
+    background-color: #1b1b1b;
+    width: max-content;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    letter-spacing: .1rem;
+    padding-top: 10px;
+    padding-right: 40px;
+    font-weight: 400;
+    cursor: not-allowed;
+    margin-left: 560px;
+    margin-top: 30px;
+    position: absolute;
+}
+.bg2 .imagee .zurag img{
+    width: 100%;
+    margin-top: 200px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+.bg2 .tuw i{
+    font-weight: 200;
+    font-style: normal;
+    color: rgb(75, 75, 75);
+    font-size: 25px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    padding-top: 20px;
+    
+}
+.menu i{
+    display: none;
+}
+.bg2 .tuw font{
+    font-weight: 400;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    padding-bottom: 20px;
+}
+.bg2 .imagee .tuw{
+    width: 180px;
+    border: 0px solid white;
+    background-color: rgba(255, 255, 255, 0.7);
+    cursor: zoom-in;
+    display: block;
+    position: absolute;
+    left: 43%;
+    top: 68%;
+}
+.bg2 .imagee .tuw span{
+    margin-left: 54px;
+    display: flex;
+}
+@media (max-width: 1023px){
+    *{
+        box-sizing: border-box;
+        align-items: center;
+    }
+    body{
+        min-width: 768px;
+        max-width: 1023px;
+        width: max-content;
+    }
+    .home{
+        min-width: 768px;
+        max-width: 1023px;
+    }
+    .menu i{
+        display: block;
+        color: #e5dfd9;
+        font-size: xx-large;
+        margin-left: 30px;
+    }
+    .header2 ul{
+        display: none;
+    }
+    .home .icons{
+        display: none;
+    }
+    .home .icons2 i{
+        border: 0px ;
+        left: 850px;
+        top: 25px;
+    }
+    .holboo span{
+        display: none;
+    }
+    .golch .logo img{
+        left: 380px;
+    }
+    .home .discover p{
+       left: 400px;
+    }
+    .bg{
+        min-width: 768px;
+        max-width: 1023px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .bg .bag{
+        min-width: 768px;
+        max-width: 1023px
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .swiper img{
+        height: 250px;
+        margin-left: 270px;
+    }
+    .swiper .swiper-button-next{
+        right: 260px;
+        position: absolute;
+        top: 200px;
+    }
+    .swiper  .swiper-button-prev{
+        left: 100px;
+        position: absolute;
+        top: 200px;
+    } 
+    .bg .bag .swiper .gucci img{
+        margin-left: 160px;
+    }
+    .bg .bag .swiper p{
+        position: absolute;
+        left: 350px;
+    }
+    .image img{
+    
+    }
+    .image .img img{
+        margin-left: 245px;
+        margin-top: 50px;
+    }
+    .bg .image p{
+        margin-left: 350px;
+    }
+    .bg2{
+        min-width: 768px;
+        max-width: 1023px;
+        margin-left: 10px;
+    }
+    .bg2 .imagee img{
+        margin-left: 150px;
+    }
+    .bg2 .imagee .gutal img{
+        margin-left: 140px;
+    }
+    .bg2 .imagee p{
+        margin-left: 330px;
+    }
+    .bg2 .zurag img{
+        width: max-content;
+    }
+}
+@media (max-width: 767px){
+    .container-fluid{
+        max-width: 677px;
+    }
+    .body{
+        width: max-content;
+        box-sizing: border-box;
+    }
+    .home{
+        max-width: 677px;
+        width: max-content;
+        background-position: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .holboo{
+        display: none;
+    }
+    .header2 ul{
+        display: none;
+    }
+    .menu i{
+        display: block;
+        color: #e5dfd9;
+        font-size: xx-large;
+    }
+    .home .discover p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .golch .logo img{
+        left: 40%;
+    }
+    .home .font{
+        font-size: x-large;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .bg{
+        max-width: 677px;
+    }
+    .swiper-slide{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .swiper img{
+        height: 180px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 30%;
+    }
+    .swiper .swiper-button-next{
+        display: none;
+    }
+    .swiper  .swiper-button-prev{
+        display: none;
+    } 
+    .bg .bag .swiper .gucci img{
+        margin-left: 50px;
+    }
+    .bg .bag .swiper p{
+        left: 260px;
+    }
+    .imagee .img img{
+        margin-left: 0;
+    }
+}

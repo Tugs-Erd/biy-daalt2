@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+<body>
+          <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="http://package.mn/wp-content/uploads/2022/06/mmexport1654697415716.jpg" alt="">
+    </div>
+      <div class="swiper-slide"><img src="http://package.mn/wp-content/uploads/2022/01/20211222_140514-e1641800061431.jpg" alt="">
+    </div>
+      <div class="swiper-slide"><img src="https://media.gettyimages.com/id/846141966/photo/fc-barcelona-v-juventus-uefa-champions-league.webp?s=612x612&w=gi&k=20&c=U-HoZjkOQhTrAUuu8Tz_YlS8DvTDFMbkja9IXL95WDw=" alt="">
+    </div>
+
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+</div>
+
+  
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        cssMode: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        mousewheel: true,
+        keyboard: true,
+        loop:true,      
+        autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      });
+      </script>
+      <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper2", {
+        AnimationEffect: teleport;
+        loop:true,
+        autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      slidesPerView: 4,
+      spaceBetween: 30,
+      navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <div class="j"></div>
+</body>
+</html>
